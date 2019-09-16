@@ -256,6 +256,7 @@ exports['default'] = InputItem;
 
 InputItem.defaultProps = {
     type: 'text',
+    allowFontScaling: false,
     editable: true,
     clear: false,
     onChange: noop,

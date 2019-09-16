@@ -200,7 +200,8 @@ TextAreaItem.defaultProps = {
     onFocus: function onFocus() {},
     onBlur: function onBlur() {},
     onErrorClick: function onErrorClick() {},
-
+    
+    allowFontScaling: false,
     clear: true,
     error: false,
     editable: true,

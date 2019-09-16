@@ -422,14 +422,18 @@ var InputNumber = function (_React$Component) {
                             }, style: [styles.stepWrap, downDisabledStyle, downStyle] },
                         _react2['default'].createElement(
                             _reactNative.Text,
-                            { ref: function ref(component) {
+                            { 
+                                allowFontScaling: false,
+                                ref: function ref(component) {
                                     return _this2._stepDownText = component;
                                 }, style: [styles.stepText, downDisabledTextStyle] },
                             '-'
                         )
                     )
                 ),
-                _react2['default'].createElement(_reactNative.TextInput, { style: [styles.input, inputDisabledStyle, inputStyle], value: inputDisplayValue, autoFocus: props.autoFocus, editable: editable, onFocus: this.onFocus, onEndEditing: this.onBlur, onChange: this.onChange, underlineColorAndroid: 'transparent', keyboardType: props.keyboardType }),
+                _react2['default'].createElement(_reactNative.TextInput, { 
+                    allowFontScaling: false,
+                    style: [styles.input, inputDisabledStyle, inputStyle], value: inputDisplayValue, autoFocus: props.autoFocus, editable: editable, onFocus: this.onFocus, onEndEditing: this.onBlur, onChange: this.onChange, underlineColorAndroid: 'transparent', keyboardType: props.keyboardType }),
                 _react2['default'].createElement(
                     _reactNative.TouchableWithoutFeedback,
                     { onPressIn: editable && !upDisabledStyle ? this.onPressInUp : undefined, onPressOut: editable && !upDisabledStyle ? this.onPressOutUp : undefined, accessible: true, accessibilityLabel: 'Increase Value', accessibilityComponentType: 'button', accessibilityTraits: editable && !upDisabledStyle ? 'button' : 'disabled' },
@@ -440,7 +444,9 @@ var InputNumber = function (_React$Component) {
                             }, style: [styles.stepWrap, upDisabledStyle, upStyle] },
                         _react2['default'].createElement(
                             _reactNative.Text,
-                            { ref: function ref(component) {
+                            { 
+                                allowFontScaling: false,
+                                ref: function ref(component) {
                                     return _this2._stepUpText = component;
                                 }, style: [styles.stepText, upDisabledTextStyle] },
                             '+'
