@@ -135,7 +135,9 @@ var Button = function (_React$Component) {
                             _react2['default'].createElement(_reactNative.ActivityIndicator, { style: _styles.indicator, animating: true, color: indicatorColor, size: 'small' }) : null,
                             _react2['default'].createElement(
                                 _reactNative.Text,
-                                { style: textStyle },
+                                { 
+                                    allowFontScaling:false,
+                                    style: textStyle },
                                 _this2.props.children
                             )
                         )
